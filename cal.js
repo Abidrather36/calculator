@@ -29,6 +29,7 @@
     
 //     document.getElementsByClassName('output')[0].innerText = out
 // }
+
 function getHistory(){
 	return document.getElementById("history-value").innerText;
 }
