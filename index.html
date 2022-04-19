@@ -1,44 +1,44 @@
 <html>
-    <head>
-        <title>Bootstrap</title>
-        <link rel="stylesheet" href="cal.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="cal.js"></script>
-      <script>
-       
-      </script>
-    </head>
-    <body>
-        <div class="container">
-            <hr>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    Calculator
-                </div>
-                <div class="panel-body">
-                    <input id="first"/>
-                    <input id="second"/>
-                    <p class="output"></p>
-                    <button class = "button" value = "1" >1</button>  
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button" id="add" onClick="cal('Add')">+</button> <br><br>
-                    <button class="button" value="4">4</button>
-                    <button class="button" value="5">5</button>
-                    <button class="button" value="6">6</button>
-                    <button class="button" id="sub"onClick="cal('Sub')">-</button>  <br><br>
-                    <button class="button" value="7">7</button>
-                    <button class="button" value="8">8</button>
-                    <button class="button" value="9">9</button>
-                    <button class="button" id="mul" onClick="cal('Mul')">*</button><br> <br>
-                    <button class="button" id="div" onClick="cal('Div')">/</button>
-                    <button class="button" value="0">0</button>
-                    <button class="button" value=".">.</button>
-                    <button class="button" value="=">=</button>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="cal.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value">9*9</p>
+					</div>
+					<div id="output">
+						<p id="output-value">81</p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="cal.js"></script>
+	</body>
 </html>
