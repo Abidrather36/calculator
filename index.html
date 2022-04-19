@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="cal.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="cal.js"></script>
+      <script>
+       
+      </script>
+    </head>
+    <body>
+        <div class="container">
+            <hr>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Calculator
+                </div>
+                <div class="panel-body">
+                    <input id="first"/>
+                    <input id="second"/>
+                    <p class="output"></p>
+                    <button class = "button" value = "1" >1</button>  
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button" id="add" onClick="cal('Add')">+</button> <br><br>
+                    <button class="button" value="4">4</button>
+                    <button class="button" value="5">5</button>
+                    <button class="button" value="6">6</button>
+                    <button class="button" id="sub"onClick="cal('Sub')">-</button>  <br><br>
+                    <button class="button" value="7">7</button>
+                    <button class="button" value="8">8</button>
+                    <button class="button" value="9">9</button>
+                    <button class="button" id="mul" onClick="cal('Mul')">*</button><br> <br>
+                    <button class="button" id="div" onClick="cal('Div')">/</button>
+                    <button class="button" value="0">0</button>
+                    <button class="button" value=".">.</button>
+                    <button class="button" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.button{
+   height:70px;
+   width:60px;
+   background-color:green;
+   border-radius:10%;
+   border: solid 2px grey;
+}
+#add{
+    background-color: lightblue
+}
